@@ -1,12 +1,31 @@
+:root{
+  --primary-color : black;
+  --secondary-color : #85F4FF;
+  --text-color : white;
+  --p-color : #8f8f8f;
+}
+
+
+#moon{
+  width: 20px;
+  cursor: pointer;
+}
+
+.light-theme{
+  --primary-color : white;
+  --p-color : black;
+  --text-color : black;
+}
+
 body {
   font-family: "Ubuntu";
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 
 p {
-  color: #8f8f8f;
+  color: var(--p-color);
   font-size: 2rem;
 }
 
@@ -23,15 +42,17 @@ h1{
 }
 
 .social-bar{
+  text-align: center;
   position: fixed;
   left: 0;
 }
 
 .head-name{
-  color: #85F4FF;
+  color: var(--secondary-color);
 }
 
 .big-heading {
+  color : var(--text-color);
   font-family: "Ubuntu";
   font-size: 4.5rem;
   line-height: 1.5;
@@ -40,7 +61,7 @@ h1{
 .section-heading {
   font-size: 3rem;
   line-height: 1.5;
-  color: white;
+  color: var(--secondary-color);
 }
 
 
@@ -72,8 +93,7 @@ h1{
 /* Title Section */
 
 #title {
-  background-color: black;
-  color: #fff;
+  background-color: var(--primary-color);
 }
 
 #title .container-fluid {
@@ -84,8 +104,8 @@ h1{
 /* skill Section */
 
 #skills {
-  background-color: black;
-  color: #85F4FF;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .skill-text {
@@ -106,13 +126,14 @@ h1{
 }
 
 .card{
-  background-color: black;
-  border-color: #85F4FF;
+  background-color: var(--primary-color);
+  border-color: var(--secondary-color);
+  border-width: thick;
   margin: 10%;
 }
 
 .card-header{
-  background-color: #85F4FF;
+  background-color: var(--secondary-color);
 }
 
 .back-text {
@@ -137,18 +158,19 @@ h1{
 
 }
 
+
 .social-icon{
-  color: white;
+  color: var(--text-color);
   margin: 3%;
 }
 
 .social-icon:hover{
-  color: #85F4FF;
+  color: var(--secondary-color);
 }
 
 footer{
-  background-color: black;
-  color: #85F4FF;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 2rem;
   text-align: left;
   padding: 5% 10% 15%;
